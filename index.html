@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Angular/Docs</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="/imgs/angular-favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+
+
+    
+
+        <!--****************************************
+            >>>Navigation for small screen \/
+        ******************************************-->
+                <nav
+                    class="small-nav navbar navbar-expand-lg navbar-dark bg-primary d-md-none static-top shadow-sm position-fixed w-100">
+                    <div class="container mb-sm-3">
+                        <div class="row">
+                            <div class="col-sm-12 d-flex ">
+                                <div class="col-sm-4 d-flex">
+                                    <button id="sidebarToggle2" class="navbar-toggler " type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                                        aria-controls="navbarSupportedContent" aria-expanded="false"
+                                        aria-label="Toggle navigation">
+                                        <span class="navbar-toggler-icon "></span>
+                                    </button>
+
+                                    <a class="navbar-brand" href="#">
+                                        <img class="d-md-none" src="imgs/hero-angular.png" alt="..." height="30">
+                                    </a>
+
+                                </div>
+                                <div class="col-sm-8 d-flex ">
+                                    <div class="col-md-2 d-flex justify-content-end ">
+                                        <div class="d-flex has-search">
+                                            <div class="d-flex align-items-center ">
+                                                <span class=""></span>
+                                                <input type="text" class="form-control" placeholder="Search">
+                                            </div>
+
+                                            <a class="d-flex align-items-center" href="#"><img class="mx-1 "
+                                                    src="imgs/moon-icon.png" alt="" width="24px"></a>
+                                            <a class="d-flex align-items-center" href="#"><img class="mx-1"
+                                                    src="imgs/psudo-icon.png" alt="" width="1px" height="30px"></a>
+                                            <a class="d-flex align-items-center" href="#"><img class="mx-1"
+                                                    src="imgs/twitter-icon.png" alt="" width="24px"></a>
+                                            <a class="d-flex align-items-center" href="#"><img class="mx-1"
+                                                    src="imgs/github-icon.png" alt="" width="24px"></a>
+                                            <a class="d-flex align-items-center" href="#"><img class="mx-1"
+                                                    src="imgs/youtube-icon.png" alt="" width="24px"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a class="navbar-brand" href="#">
+                            <img class="d-none d-md-block" src="imgs/angular-logo.png" alt="..." height="30">
+                        </a>
+                    </div>
+                </nav>
+
+    <!--****************************************
+        >>>Navigation for large screen \/
+    ******************************************-->
+                <nav class="large-navbar bg-primary navbar-expand-lg  navbar-dark static-top d-none  d-md-block">
+                    <div class="container-fluid">
+                        <div class="row d-flex justify-content-between w-100 main-nav">
+                            <div class="col-md-6 d-flex  align-content-center">
+                                <button class="btn btn-outline-light h-75 mt-2" id="sidebarToggle">
+                                    <i class="fa-solid fa-bars"></i>
+                                </button>
+
+                                <a class="navbar-brand m-lg-2" href="#">
+                                    <img src="imgs/angular-logo.png" alt="..." height="36">
+                                </a>
+                                <button type="button" class="btn btn-close-white">DOCS</button>
+                                <button type="button" class="btn btn-close-white">COMMUNIY</button>
+                                <button type="button" class="btn btn-close-white">BLOGS</button>
+
+                            </div>
+                            <div class="col-md-6 d-flex justify-content-end justify-content-sm-end ">
+                                <div class="d-flex align-items-center ">
+                                    <!-- <span class="fa-search form-control-feedback"></span> -->
+                                    <input type="text" class=" form-control" placeholder="Search">
+                                </div>
+                                <div class=" d-flex align-items-center">
+                                    <a class="navbar-brand" href="#"><img class=" mx-2" src="imgs/moon-icon.png" alt=""
+                                            width="24px"></a>
+                                    <a class="navbar-brand" href="#"><img class=" mx-0" src="imgs/psudo-icon.png" alt=""
+                                            width="1px" height="30px"></a>
+                                    <a class="navbar-brand" href="#"><img class=" mx-2" src="imgs/twitter-icon.png"
+                                            alt="" width="24px"></a>
+                                    <a class="navbar-brand" href="#"><img class=" mx-2" src="imgs/github-icon.png"
+                                            alt="" width="24px"></a>
+                                    <a class="navbar-brand" href="#"><img class=" mx-2" src="imgs/youtube-icon.png"
+                                            alt="" width="24px"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="d-flex" id="wrapper">
+        <!--****************************************
+        >>>Side bar\/
+    ******************************************-->
+        <div class=" sidebar border-end bg-white" id="sidebar-wrapper">
+            <div class="sidebar-heading border-bottom bg-light">Introduction</div>
+            <div class="list-group list-group-flush">
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Getting
+                    Started</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Understandin
+                    Angular</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Developer
+                    guides</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Best practices</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Angular tools</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Tutorials</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Updates and
+                    releases</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Documentation
+                    contributors guide</a>
+            </div>
+        </div>
+        <!-- Page content wrapper-->
+        <div id="page-content-wrapper">
+<!--****************************************
+    >>>Hero Section \/
+******************************************-->
+
+            <div class="container">
+
+                <br><br><br>
+                <h1>
+                    Introduction to the Angular docs <br><br>
+                </h1>
+                <p>
+                    Angular is an application-design framework and development platform for creating efficient and
+                    sophisticated single-page apps. <br>
+
+                    These Angular docs help you learn and use the Angular framework and development platform, from your
+                    first application to optimizing complex single-page applications for enterprises. Tutorials and
+                    guides include downloadable examples to help you start your projects.
+                </p>
+            </div>
+
+            <div class="container mb-2">
+                <div class="row">
+                    <div class="row row-cols-1 row-cols-md-2 g-4">
+
+                        <div class="col">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title text-primary text-center">Build your first Angular app</h5>
+                                    <br>
+                                    <p class="card-text text-center">
+                                        Work through a full tutorial to create your first application. </p>
+                                </div>
+                                <div class="card-footer text-end ">
+                                    <small class="text-muted">
+                                        <p class="text-primary">Home App Tutorial</p>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title text-primary text-center">
+                                        What is Angular
+                                    </h5>
+                                    <br>
+                                    <p class="card-text text-center">
+                                        Get a high-level overview of the Angular platform.
+                                    </p>
+                                </div>
+                                <div class="card-footer text-end ">
+                                    <small class="text-muted">
+                                        <p class="text-primary">Platform overview</p>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title text-primary text-center">Learn and Explore</h5><br>
+                                    <p class="card-text text-center">
+                                        Learn about the fundamental design concepts and architecture of Angular
+                                        applications.
+                                    </p>
+                                </div>
+                                <div class="card-footer text-end ">
+                                    <small class="text-muted">
+                                        <p class="text-primary">Introduction to Angular concepts</p>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title text-primary text-center">Set up your environment</h5><br>
+                                    <p class="card-text text-center">
+                                        Set up your environment
+                                    </p>
+                                </div>
+                                <div class="card-footer text-end ">
+                                    <small class="text-muted">
+                                        <p class="text-primary">Local setup</p>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="">
+                        <h3>
+                            Assumption
+                        </h3>
+                        <p>
+                            These docs assume that you are already familiar with HTML, CSS, JavaScript, and some of the
+                            tools from the latest standards, such as classes and modules. The code samples are written
+                            using TypeScript. Most Angular code can be written with just the latest JavaScript, using
+                            types for dependency injection, and using decorators for metadata.
+                        </p>
+                    </div>
+                    <div class="">
+                        <h3>
+                            Feedback
+                        </h3>
+                        <p>
+                            We want to hear from you. Report problems or submit suggestions for future docs.
+                            Contribute to Angular docs by creating pull requests on the Angular GitHub repository. See
+                            Contributing to Angular for information about submission guidelines.
+                            Our community values respectful, supportive communication. Please consult and adhere to the
+                            Code of Conduct.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+<!--****************************************
+    >>>Footer Section \/
+******************************************-->
+            <div class="footer-div">
+                <div class="container">
+                    <div class="row">
+                        <div class=" footer-text col-md-12 d-flex flex-wrap justify-content-around">
+                            <div class="col-md-2 col-sm-5  p-1 m-2 mt-5">
+                                <h5 class="fw-bold mb-3 text-white">RESOURCES</h5>
+                                <a class="text-decoration-none" href="#">
+                                    <p class="fw-bold text-light">About</p>
+                                </a>
+                                <a class="text-decoration-none" href="#">
+                                    <p class="fw-bold text-light">Reource Listing</p>
+                                </a>
+                                <a class="text-decoration-none" href="#">
+                                    <p class="fw-bold text-light">Press Kit</p>
+                                </a>
+                                <a class="text-decoration-none" href="#">
+                                    <p class="fw-bold text-light">Blog</p>
+                                </a>
+                            </div>
+
+                            <div class="footer-text col-md-2 col-sm-5  p-1 m-2 mt-5">
+                                <h5 class="fw-bold mb-3 text-light">RESOURCES</h5>
+                                <a class="text-decoration-none" href="#">
+                                    <p class="fw-bold text-light">About</p>
+                                </a>
+                                <a class="text-decoration-none" href="#">
+                                    <p class="fw-bold text-light">Reource Listing</p>
+                                </a>
+                                <a class="text-decoration-none" href="#">
+                                    <p class="fw-bold text-light">Press Kit</p>
+                                </a>
+                                <a class="text-decoration-none" href="#">
+                                    <p class="fw-bold text-light">Blog</p>
+                                </a>
+                            </div>
+
+                            <div class="footer-text col-md-2 col-sm-5  p-1 m-2 mt-5 ">
+                                <h5 class="fw-bold mb-3 text-light">RESOURCES</h5>
+                                <a class="text-decoration-none" href="#">
+                                    <p class="fw-bold text-light">About</p>
+                                </a>
+                                <a class="text-decoration-none" href="#">
+                                    <p class="fw-bold text-light">Reource Listing</p>
+                                </a>
+                                <a class="text-decoration-none" href="#">
+                                    <p class="fw-bold text-light">Press Kit</p>
+                                </a>
+                                <a class="text-decoration-none" href="#">
+                                    <p class="fw-bold text-light">Blog</p>
+                                </a>
+                            </div>
+
+                            <div class="footer-text col-md-2 col-sm-5  p-1 m-2 mt-5">
+                                <h5 class="fw-bold mb-3 text-light">RESOURCES</h5>
+                                <a class="text-decoration-none" href="#">
+                                    <p class="fw-bold text-light ">About</p>
+                                </a>
+                                <a class="text-decoration-none" href="#">
+                                    <p class="fw-bold text-light">Reource Listing</p>
+                                </a>
+                                <a class="text-decoration-none" href="#">
+                                    <p class="fw-bold text-light">Press Kit</p>
+                                </a>
+                                <a class="text-decoration-none" href="#">
+                                    <p class="fw-bold text-light">Blog</p>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 text-center mt-5">
+                    <p class="text-light">Super-powered by Google ©2010-2023.</p>
+                    <p class="text-light">Code licensed under an MIT-style License. Documentation licensed under CC BY
+                        4.0. </p>
+                    <p class="text-light">Version 16.1.5-local+sha.1bf99e2f92.</h>
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
