@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>YouTube</title>
+    <!-- Favicon-->
+    <link rel="icon" type="images/x-icon" href="imgs/youtube-fav-icon.png" />    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&family=Roboto&family=Rubik:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap" rel="stylesheet">
+
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+
+
+    
+
+        <!--****************************************
+            >>>Navigation for small screen \/
+        ******************************************-->
+                <nav class="small-nav navbar navbar-expand-lg navbar-dark bg-light d-md-none static-top shadow-sm position-fixed w-100">
+                    <div class="container-fluid mb-sm-3">
+                        <div class="row w-100 ">
+                            <div class="col-sm-12 d-flex justify-content-between px-0 ">
+                                <div class="col-sm-3 d-flex">
+                                    <button id="sidebarToggle2" class="navbar-toggler nav-btn" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                                        aria-controls="navbarSupportedContent" aria-expanded="false"
+                                        aria-label="Toggle navigation">
+                                        <span class="navbar-toggler-icon "></span>
+                                    </button>
+                                    <a class="navbar-brand m-lg-2" href="#">
+                                        <img src="imgs/logo.png" alt="..." height="40px">
+                                    </a>
+
+                                </div>
+                                <div class="col-sm-6 d-flex ">
+                                    <div class="d-flex align-items-center justify-conten-center w-100 search_box ">
+                                        <!-- <span class="fa-search form-control-feedback"></span> -->
+                                        <input type="search" class=" form-control" placeholder="Search">
+                                        <button class="search_button">
+                                            <i class="fa-solid fa-magnifying-glass"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3 d-flex align-items-center justify-content-end ">
+                                    <div class="nav-right d-flex justify-content-center" >
+                                        <!-- <img src="imgs/upload.png" alt=""> -->
+                                        <span>
+                                            <img src="imgs/notification.png" alt="">
+                                            <small class="notification-letter">9</small>
+                                        </span>
+                            
+                                        <img class="user-icon" src="imgs/bunny-pp.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                       
+                    </div>
+                </nav>
+
+                
+
+    <!--****************************************
+        >>>Navigation for large screen \/
+    ******************************************-->
+                <nav class="large-navbar bg-light navbar-expand-lg  navbar-dark static-top d-none  d-md-block">
+                    <div class="container-fluid">
+                        <div class="row d-flex justify-content-between w-100 main-nav">
+                            <div class="col-md-3 d-flex  align-content-center">
+                                <button class="btn btn-outline-light h-75 mt-2 nav-btn" id="sidebarToggle">
+                                    <i class="fa-solid fa-bars"></i>
+                                </button>
+
+                                <a class="navbar-brand m-lg-2" href="#">
+                                    <img src="imgs/logo.png" alt="..." height="40px">
+                                </a>
+
+
+                            </div>
+                            <div class="col-md-6 d-flex justify-content-end justify-content-sm-end ">
+                                <div class="d-flex align-items-center justify-conten-center w-100 search_box ">
+                                    <!-- <span class="fa-search form-control-feedback"></span> -->
+                                    <input type="search" class=" form-control" placeholder="Search">
+                                    <button class="search_button">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </button>
+                                </div>
+                            
+                            </div>
+                            <div class="col-md-3 d-flex justify-content-center align-items-center">
+                            
+                                    <div class="nav-right flex-div" >
+                                        <img src="imgs/upload.png" alt="">
+                                        <span>
+                                            <img src="imgs/notification.png" alt="">
+                                            <small class="notification-letter">9</small>
+                                        </span>
+                            
+                                        <img class="user-icon" src="imgs/bunny-pp.png" alt="">
+                                    </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="d-flex mt-sm-4 mt-md-0" id="wrapper">
+        <!--****************************************
+        >>>Side bar\/
+    ******************************************-->
+        <div class=" sidebar border-end bg-white" id="sidebar-wrapper">
+            <div class="list-group list-group-flush mt-5">
+                <a href="#">
+                    <div class="sidebar_menu mt-5">
+                        <div class="menu_img">
+                            <img src="imgs/home.png" alt="" width="24px">
+                        </div>
+                        <div class="menu_title">
+                            <p>Home</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="sidebar_menu">
+                        <div class="menu_img">
+                            <img src="imgs/youtube-shorts.png" alt="" width="24px">
+                        </div>
+                        <div class="menu_title">
+                            <p>Shorts</p>
+                        </div>
+                    </div>
+                </a>
+    
+                <a href="#">
+                    <div class="sidebar_menu">
+                        <div class="menu_img">
+                            <img src="imgs/subscriprion.png" alt="" width="24px">
+                        </div>
+                        <div class="menu_title">
+                            <p>Subscriptins</p>
+                        </div>
+                    </div>
+                </a>
+                <br><hr><br>
+                <a href="#">
+                    <div class="sidebar_menu">
+                        <div class="menu_img">
+                            <img src="imgs/history.png" alt="" width="24px">
+                        </div>
+                        <div class="menu_title">
+                            <p>library</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="sidebar_menu">
+                        <div class="menu_img">
+                            <img src="imgs/playlist.png" alt="" width="24px">
+                        </div>
+                        <div class="menu_title">
+                            <p>Playlist</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="sidebar_menu">
+                        <div class="menu_img">
+                            <img src="imgs/messages.png" alt="" width="24px">
+                        </div>
+                        <div class="menu_title">
+                            <p>Message</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="sidebar_menu">
+                        <div class="menu_img">
+                            <img src="imgs/show-more.png" alt="" width="24px">
+                        </div>
+                        <div class="menu_title">
+                            <p>Show More</p>
+                        </div>
+                    </div>
+                </a>
+
+                <hr>
+
+                <div class="subscribed-list">
+                    <h4>Subscriptions</h4>
+                    <a href="#">
+                        <div class="sidebar_menu">
+                            <div class="menu_img">
+                                <img src="imgs/prolay1.jpg" alt="" width="24px">
+                            </div>
+                            <div class="menu_title">
+                                <p><small>Prolay Mukherjee</small></p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="sidebar_menu">
+                            <div class="menu_img">
+                                <img src="imgs/arafat.jpg" alt="" width="24px">
+                            </div>
+                            <div class="menu_title">
+                                <p><small>Mezba Uddin Arafat</small></p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="sidebar_menu">
+                            <div class="menu_img">
+                                <img src="imgs/alim.jpg" alt="" width="24px">
+                            </div>
+                            <div class="menu_title">
+                                <p><small>Alim Shikdar</small></p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="sidebar_menu">
+                            <div class="menu_img">
+                                <img src="imgs/hridoy.jpg" alt="" width="24px">
+                            </div>
+                            <div class="menu_title">
+                                <p><small>Hridoy Mukherjee</small></p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="sidebar_menu">
+                            <div class="menu_img">
+                                <img src="imgs/mashrafi.jpg" alt="" width="24px">
+                            </div>
+                            <div class="menu_title">
+                                <p><small>Mashrafi Bin Murtaza</small></p>
+                            </div>
+                        </div>
+                    </a>
+                    
+                </div>               
+            </div>
+
+            <br><hr><br>
+
+
+            
+            <div class="copyright-list">
+                <p>
+                    About Press Copyright Contact usbr <br> Creators Advertise Developers
+                </p>
+                <br>
+                <p>
+                    TermsPrivacyPolicy & SafetyHowbr<br> YouTube worksTest new features
+    
+                </p>
+                <br>
+                <p class="copyright-text">
+                    &copy; 2023 Google LLC
+                </p>
+                <br><br>
+            </div>
+
+
+
+        </div>
+        <!-- Page content wrapper-->
+        <div id="page-content-wrapper" class="mt-md-5 pt-3">
+<!--****************************************
+    >>>Hero Section \/
+******************************************-->
+
+            <div class="container-fluid pt-5">
+                <div class="row d-flex justify-content-center align-content-center align-items-center  ">
+                    <div class="col-md-12 d-flex flex-wrap w-100  justify-content-center">
+<!---------------------- Video Card --------------------------->
+                        <div class="card col-md-3 m-1 h-50">
+                            <img src="imgs/bunny-thumb.jpg" class="card-img-top"  alt="...">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-12 d-flex justify-content-between ">
+                                        <div class="col-md-2">
+                                            <img class="rounded-circle" src="imgs/bunny-pp.png" alt="" width="35px">
+                                        </div>
+                                        <div class="col-md-10">
+                                            <h6 class="card-title m-0">Big Buck Bunny 60fps 4K - Official Blender Foundation Short Film </h6>
+                                            <p class="card-text m-0"><small class="text-muted">Hunny-Bunny</small></p>
+                                            <p class="mb-0"><small>2k views &bull; 1 days ago</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card col-md-3   m-1 h-50">
+                            <img src="imgs/jahangir-thumb.webp" class="card-img-top"  alt="...">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-12 d-flex justify-content-between ">
+                                        <div class="col-md-2">
+                                            <img class="rounded-circle" src="imgs/jahangir-pp.jpg" alt="" width="35px">
+                                        </div>
+                                        <div class="col-md-10">
+                                            <h6 class="card-title m-0">পেটের চর্বি ও ওজন কমানো সহ রোগ থেকে মুক্তি পেতে কোষ খালি করতে হবে</h6>
+                                            <p class="card-text m-0"><small class="text-muted">Dr Jahangir Kabir</small></p>
+                                            <p class="card-text"><small>20k views &bull; 3 days ago</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card col-md-3   m-1 h-50">
+                            <img src="imgs/sumit-saha.webp" class="card-img-top"  alt="...">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-12 d-flex justify-content-between ">
+                                        <div class="col-md-2">
+                                            <img class="rounded-circle" src="imgs/sumit-pp.jpg" alt="" width="35px">
+                                        </div>
+                                        <div class="col-md-10">
+                                            <h6 class="card-title m-0">I knew as a Junior Web Developer - Sumit Saha....</h6>
+                                            <p class="card-text m-0"><small class="text-muted">Learn with Sumit - LWS - Bangladesh</small></p>
+                                            <p><small>34k views &bull; 3 months ago</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card col-md-3   m-1 h-50">
+                            <img src="imgs/lucy-eng-thumb.webp" class="card-img-top"  alt="...">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-12 d-flex justify-content-between ">
+                                        <div class="col-md-2">
+                                            <img class="rounded-circle" src="imgs/lucy-pp.jpg" alt="" width="35px">
+                                        </div>
+                                        <div class="col-md-10">
+                                            <h6 class="card-title m-0">BRITISH vs AMERICAN ENGLISH - Accent & Vocabulary Comparison!</h6>
+                                            <p class="card-text m-0"><small class="text-muted">ENGLISH WITH LUCY</small></p>
+                                            <p><small>1.3M views &bull; 3 year ago</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card col-md-3   m-1 h-50">
+                            <img src="imgs/titanic-thumb.webp" class="card-img-top"  alt="...">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-12 d-flex justify-content-between ">
+                                        <div class="col-md-2">
+                                            <img class="rounded-circle" src="imgs/news-pp.jpg" alt="" width="35px">
+                                        </div>
+                                        <div class="col-md-10">
+                                            <h6 class="card-title m-0">টাইটানের পরিণতির কথা আগেই জানতেন টাইটানিকের পরিচালক....</h6>
+                                            <p class="card-text m-0"><small class="text-muted">Desh TV News</small></p>
+                                            <p><small>235k views &bull; 8 hours ago</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card col-md-3   m-1 h-50">
+                            <img src="imgs/swiss-thumb.webp" class="card-img-top"  alt="...">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-12 d-flex justify-content-between ">
+                                        <div class="col-md-2">
+                                            <img class="rounded-circle" src="imgs/swiss-pp.jpg" alt="" width="35px">
+                                        </div>
+                                        <div class="col-md-10">
+                                            <h6 class="card-title m-0">সুইজারল্যান্ডের সবচেয়ে ধনী গ্রাম | Luxury Swiss Village | Gstaad</h6>
+                                            <p class="card-text m-0"><small class="text-muted">Shehwar & Maria</small></p>
+                                            <p><small>69k views &bull; 3 weeks ago</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card col-md-3 m-1 h-50">
+                            <img src="imgs/bunny-thumb.jpg" class="card-img-top"  alt="...">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-12 d-flex justify-content-between ">
+                                        <div class="col-md-2">
+                                            <img class="rounded-circle" src="imgs/bunny-pp.png" alt="" width="35px">
+                                        </div>
+                                        <div class="col-md-10">
+                                            <h6 class="card-title m-0">Big Buck Bunny 60fps 4K - Official Blender Foundation Short Film </h6>
+                                            <p class="card-text m-0"><small class="text-muted">Hunny-Bunny</small></p>
+                                            <p class="mb-0"><small>2k views &bull; 1 days ago</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card col-md-3   m-1 h-50">
+                            <img src="imgs/jahangir-thumb.webp" class="card-img-top"  alt="...">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-12 d-flex justify-content-between ">
+                                        <div class="col-md-2">
+                                            <img class="rounded-circle" src="imgs/jahangir-pp.jpg" alt="" width="35px">
+                                        </div>
+                                        <div class="col-md-10">
+                                            <h6 class="card-title m-0">পেটের চর্বি ও ওজন কমানো সহ রোগ থেকে মুক্তি পেতে কোষ খালি করতে হবে</h6>
+                                            <p class="card-text m-0"><small class="text-muted">Dr Jahangir Kabir</small></p>
+                                            <p class="card-text"><small>20k views &bull; 3 days ago</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card col-md-3   m-1 h-50">
+                            <img src="imgs/sumit-saha.webp" class="card-img-top"  alt="...">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-12 d-flex justify-content-between ">
+                                        <div class="col-md-2">
+                                            <img class="rounded-circle" src="imgs/sumit-pp.jpg" alt="" width="35px">
+                                        </div>
+                                        <div class="col-md-10">
+                                            <h6 class="card-title m-0">I knew as a Junior Web Developer - Sumit Saha....</h6>
+                                            <p class="card-text m-0"><small class="text-muted">Learn with Sumit - LWS - Bangladesh</small></p>
+                                            <p><small>34k views &bull; 3 months ago</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card col-md-3   m-1 h-50">
+                            <img src="imgs/lucy-eng-thumb.webp" class="card-img-top"  alt="...">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-12 d-flex justify-content-between ">
+                                        <div class="col-md-2">
+                                            <img class="rounded-circle" src="imgs/lucy-pp.jpg" alt="" width="35px">
+                                        </div>
+                                        <div class="col-md-10">
+                                            <h6 class="card-title m-0">BRITISH vs AMERICAN ENGLISH - Accent & Vocabulary Comparison!</h6>
+                                            <p class="card-text m-0"><small class="text-muted">ENGLISH WITH LUCY</small></p>
+                                            <p><small>1.3M views &bull; 3 year ago</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card col-md-3   m-1 h-50">
+                            <img src="imgs/titanic-thumb.webp" class="card-img-top"  alt="...">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-12 d-flex justify-content-between ">
+                                        <div class="col-md-2">
+                                            <img class="rounded-circle" src="imgs/news-pp.jpg" alt="" width="35px">
+                                        </div>
+                                        <div class="col-md-10">
+                                            <h6 class="card-title m-0">টাইটানের পরিণতির কথা আগেই জানতেন টাইটানিকের পরিচালক....</h6>
+                                            <p class="card-text m-0"><small class="text-muted">Desh TV News</small></p>
+                                            <p><small>235k views &bull; 8 hours ago</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card col-md-3   m-1 h-50">
+                            <img src="imgs/swiss-thumb.webp" class="card-img-top"  alt="...">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-12 d-flex justify-content-between ">
+                                        <div class="col-md-2">
+                                            <img class="rounded-circle" src="imgs/swiss-pp.jpg" alt="" width="35px">
+                                        </div>
+                                        <div class="col-md-10">
+                                            <h6 class="card-title m-0">সুইজারল্যান্ডের সবচেয়ে ধনী গ্রাম | Luxury Swiss Village | Gstaad</h6>
+                                            <p class="card-text m-0"><small class="text-muted">Shehwar & Maria</small></p>
+                                            <p><small>69k views &bull; 3 weeks ago</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card col-md-3 m-1 h-50">
+                            <img src="imgs/bunny-thumb.jpg" class="card-img-top"  alt="...">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-12 d-flex justify-content-between ">
+                                        <div class="col-md-2">
+                                            <img class="rounded-circle" src="imgs/bunny-pp.png" alt="" width="35px">
+                                        </div>
+                                        <div class="col-md-10">
+                                            <h6 class="card-title m-0">Big Buck Bunny 60fps 4K - Official Blender Foundation Short Film </h6>
+                                            <p class="card-text m-0"><small class="text-muted">Hunny-Bunny</small></p>
+                                            <p class="mb-0"><small>2k views &bull; 1 days ago</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card col-md-3   m-1 h-50">
+                            <img src="imgs/jahangir-thumb.webp" class="card-img-top"  alt="...">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-12 d-flex justify-content-between ">
+                                        <div class="col-md-2">
+                                            <img class="rounded-circle" src="imgs/jahangir-pp.jpg" alt="" width="35px">
+                                        </div>
+                                        <div class="col-md-10">
+                                            <h6 class="card-title m-0">পেটের চর্বি ও ওজন কমানো সহ রোগ থেকে মুক্তি পেতে কোষ খালি করতে হবে</h6>
+                                            <p class="card-text m-0"><small class="text-muted">Dr Jahangir Kabir</small></p>
+                                            <p class="card-text"><small>20k views &bull; 3 days ago</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card col-md-3   m-1 h-50">
+                            <img src="imgs/sumit-saha.webp" class="card-img-top"  alt="...">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-12 d-flex justify-content-between ">
+                                        <div class="col-md-2">
+                                            <img class="rounded-circle" src="imgs/sumit-pp.jpg" alt="" width="35px">
+                                        </div>
+                                        <div class="col-md-10">
+                                            <h6 class="card-title m-0">I knew as a Junior Web Developer - Sumit Saha....</h6>
+                                            <p class="card-text m-0"><small class="text-muted">Learn with Sumit - LWS - Bangladesh</small></p>
+                                            <p><small>34k views &bull; 3 months ago</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card col-md-3   m-1 h-50">
+                            <img src="imgs/lucy-eng-thumb.webp" class="card-img-top"  alt="...">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-12 d-flex justify-content-between ">
+                                        <div class="col-md-2">
+                                            <img class="rounded-circle" src="imgs/lucy-pp.jpg" alt="" width="35px">
+                                        </div>
+                                        <div class="col-md-10">
+                                            <h6 class="card-title m-0">BRITISH vs AMERICAN ENGLISH - Accent & Vocabulary Comparison!</h6>
+                                            <p class="card-text m-0"><small class="text-muted">ENGLISH WITH LUCY</small></p>
+                                            <p><small>1.3M views &bull; 3 year ago</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card col-md-3   m-1 h-50">
+                            <img src="imgs/titanic-thumb.webp" class="card-img-top"  alt="...">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-12 d-flex justify-content-between ">
+                                        <div class="col-md-2">
+                                            <img class="rounded-circle" src="imgs/news-pp.jpg" alt="" width="35px">
+                                        </div>
+                                        <div class="col-md-10">
+                                            <h6 class="card-title m-0">টাইটানের পরিণতির কথা আগেই জানতেন টাইটানিকের পরিচালক....</h6>
+                                            <p class="card-text m-0"><small class="text-muted">Desh TV News</small></p>
+                                            <p><small>235k views &bull; 8 hours ago</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card col-md-3   m-1 h-50">
+                            <img src="imgs/swiss-thumb.webp" class="card-img-top"  alt="...">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-12 d-flex justify-content-between ">
+                                        <div class="col-md-2">
+                                            <img class="rounded-circle" src="imgs/swiss-pp.jpg" alt="" width="35px">
+                                        </div>
+                                        <div class="col-md-10">
+                                            <h6 class="card-title m-0">সুইজারল্যান্ডের সবচেয়ে ধনী গ্রাম | Luxury Swiss Village | Gstaad</h6>
+                                            <p class="card-text m-0"><small class="text-muted">Shehwar & Maria</small></p>
+                                            <p><small>69k views &bull; 3 weeks ago</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
