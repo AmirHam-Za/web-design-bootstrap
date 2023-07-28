@@ -1,0 +1,595 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    <!-- Style -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>youtube</title>
+    <link rel="shortcut icon" href="imgs/youtube-fav-icon.png" type="image/x-icon">
+  </head>
+  <body>
+
+
+
+
+     <!--****************************************
+            >>>Navigation for small screen \/
+        ******************************************-->
+        <nav class="small-nav navbar navbar-expand-lg navbar-dark bg-light d-md-none static-top shadow-sm position-fixed w-100">
+          <div class="container-fluid mb-sm-3">
+              <div class="row w-100 ">
+                  <div class="col-sm-12 d-flex justify-content-between px-0 ">
+                      <div class="col-sm-3 d-flex">
+                          <button id="sidebarToggle2" class="navbar-toggler nav-btn" type="button"
+                              data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                              aria-controls="navbarSupportedContent" aria-expanded="false"
+                              aria-label="Toggle navigation">
+                              <span class="navbar-toggler-icon "></span>
+                          </button>
+                          <a class="navbar-brand m-lg-2" href="#">
+                              <img src="imgs/logo.png" alt="..." height="40px">
+                          </a>
+
+                      </div>
+                      <div class="col-sm-6 d-flex ">
+                          <div class="d-flex align-items-center justify-conten-center w-100 search_box ">
+                              <!-- <span class="fa-search form-control-feedback"></span> -->
+                              <input type="search" class=" form-control" placeholder="Search">
+                              <button class="search_button">
+                                  <i class="fa-solid fa-magnifying-glass"></i>
+                              </button>
+                          </div>
+                      </div>
+                      <div class="col-sm-3 d-flex align-items-center justify-content-end ">
+                          <div class="nav-right d-flex justify-content-center" >
+                              <!-- <img src="imgs/upload.png" alt=""> -->
+                              <span>
+                                  <img src="imgs/notification.png" alt="">
+                                  <small class="notification-letter">9</small>
+                              </span>
+                  
+                              <img class="user-icon" src="imgs/bunny-pp.png" alt="">
+                          </div>
+                      </div>
+                  </div>
+              </div>                       
+          </div>
+      </nav>
+
+      
+
+<!--****************************************
+>>>Navigation for large screen \/
+******************************************-->
+      <nav class="large-navbar bg-light navbar-expand-lg  navbar-dark static-top d-none  d-md-block">
+          <div class="container-fluid">
+              <div class="row d-flex justify-content-between w-100 main-nav">
+                  <div class="col-md-3 d-flex  align-content-center">
+                      <button class="btn btn-outline-light h-75 mt-2 nav-btn" id="sidebarToggle">
+                          <i class="fa-solid fa-bars"></i>
+                      </button>
+                      
+                      <a class="navbar-brand m-lg-2" href="#">
+                      </a>
+                      <img src="imgs/logo.png" alt="..." height="50px">
+
+
+                  </div>
+                  <div class="col-md-6 d-flex justify-content-end justify-content-sm-end ">
+                      <div class="d-flex align-items-center justify-conten-center w-100 search_box ">
+                          <!-- <span class="fa-search form-control-feedback"></span> -->
+                          <input type="search" class=" form-control" placeholder="Search">
+                          <button class="search_button">
+                              <i class="fa-solid fa-magnifying-glass"></i>
+                          </button>
+                      </div>
+                  
+                  </div>
+                  <div class="col-md-3 d-flex justify-content-center align-items-center">
+                  
+                          <div class="nav-right flex-div" >
+                              <img src="imgs/upload.png" alt="">
+                              <span>
+                                  <img src="imgs/notification.png" alt="">
+                                  <small class="notification-letter">9</small>
+                              </span>
+                  
+                              <img class="user-icon" src="imgs/bunny-pp.png" alt="">
+                          </div>
+
+
+                  </div>
+              </div>
+          </div>
+      </nav>
+
+
+
+    <aside class="sidebar">
+      <div class="toggle">
+        <a href="#" class="burger js-menu-toggle" data-toggle="collapse" data-target="#main-navbar">
+              <span></span>
+            </a>
+      </div>
+      <div class="side-inner">
+        <div class="nav-menu">
+          <div class="w-100 pl-3 bg-light">
+          <img class="" src="imgs/hamburger-menu-icon.png" alt="" width="30px">
+          <img src="imgs/logo.png" alt="" width="150px">
+          </div>
+          <div class="w-100 d-flex mt-3 ">
+            <button class="btn btn-light w-75 m-auto  d-flex align-items-center"> <img class="mr-3" src="imgs/icon-home.png" alt="" width="25px"> Home</button>
+          </div>
+          <div class="w-100 d-flex mt-3 ">
+            <button class="btn btn-light w-75 m-auto  d-flex align-items-center"> <img class="mr-3" src="imgs/youtube-shorts.png" alt="" width="25px"> Shorts</button>
+          </div>
+          <div class="w-100 d-flex mt-3 ">
+            <button class="btn btn-light w-75 m-auto  d-flex align-items-center"> <img class="mr-3" src="imgs/subscriprion.png" alt="" width="25px"> Subscription</button>
+          </div>
+          <hr class="bg-light w-75 text-center">
+
+          <div class="w-100 d-flex mt-3 ">
+            <button class="btn btn-light w-75 m-auto  d-flex align-items-center"> <img class="mr-3" src="imgs/library.png" alt="" width="25px"> Library</button>
+          </div>
+          <div class="w-100 d-flex mt-3 ">
+            <button class="btn btn-light w-75 m-auto  d-flex align-items-center"> <img class="mr-3" src="imgs/history.png" alt="" width="25px"> History</button>
+          </div>
+          <hr class="bg-light w-75 text-center">
+          
+          <h6 class=" w-75 text-center">Subscription</h6>
+          <div class="w-100 d-flex mt-3 ">
+            <button class="btn btn-block w-75 m-auto  d-flex align-items-center"> <img class="mr-3 rounded-pill" src="imgs/jahangir-pp.jpg" alt="" width="25px"> Dr. Jahangir Kabir</button>
+          </div>
+          <div class="w-100 d-flex mt-3 ">
+            <button class="btn btn-block w-75 m-auto  d-flex align-items-center"> <img class="mr-3 rounded-pill" src="imgs/prolay1.jpg" alt="" width="25px"> Prolay Mukherjee</button>
+          </div>
+          <div class="w-100 d-flex mt-3 ">
+            <button class="btn btn-block w-75 m-auto  d-flex align-items-center"> <img class="mr-3 rounded-pill" src="imgs/alim.jpg" alt="" width="25px"> Alim Shikder</button>
+          </div>
+          <div class="w-100 d-flex mt-3 ">
+            <button class="btn btn-block w-75 m-auto  d-flex align-items-center"> <img class="mr-3 rounded-pill" src="imgs/hridoy.jpg" alt="" width="25px"> Hridoy Mukherjee</button>
+          </div>
+          <div class="w-100 d-flex mt-3 ">
+            <button class="btn btn-block w-75 m-auto  d-flex align-items-center"> <img class="mr-3 rounded-pill" src="imgs/arafat.jpg" alt="" width="25px"> Mezba Uddin Arafat</button>
+          </div>
+        </div>
+      </div>
+      
+    </aside>
+
+
+
+
+    <main>
+      
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 d-flex p-0 pt-3 flex-wrap">
+              <!-- ************************************
+                >>>> main video and comments section \/
+                **************************************** -->
+              <div class="content col-md-8 mb-5">
+                <div class="col-md-12">
+                  <iframe class="w-100" width="" height="480" src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=0">
+                  </iframe>
+                </div>
+                <div class="col-md-12">
+                  <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h3>
+                  <div class="col-md-12 d-flex p-0 flex-wrap">
+                    
+                    <div class="col-md-6 d-flex p-0">
+                      <div class="col-md-12 d-flex justify-content-between align-items-center  p-0">
+                        <img class="rounded-circle" src="https://yt3.ggpht.com/ytc/AOPolaTZlPHNNevycVNIWi8ZxSP5v2Dk0yS7A2pH3YmB=s48-c-k-c0x00ffffff-no-rj-mo" alt="">
+                        <h5>Lorem ipsum....</h5>
+                        <button class="btn btn-dark rounded-pill ml-2 h-75 d-flex align-items-center">Subscribe</button>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="d-flex w-100 justify-content-end">
+                        <button class=" d-flex align-items-end rounded-left border  border-dark border-bottom-0 border-top-0 border-left-0  px-3"> <img src="imgs/thumbs-up-64.png" alt="" width="30">13k</button>
+                        <button class=" d-flex align-items-end rounded-right border-0 px-3"> <img src="imgs/dislike-64.png" alt="" width="30"></button>
+                        <button class=" d-flex align-items-center rounded-pill ml-3 border-0 px-3"> <img src="imgs/share-50.png" alt="" width="30">Share</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12 mt-3 border border-success rounded py-2">
+                  <h5 class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, a?</h5>
+                  <p class="text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  <p class="text-dark"><strong>Show momre</strong></p>
+                </div>
+
+                <!-- ************************************
+                >>>>  comments section \/
+                **************************************** -->
+                <div class="w-100 mt-3">
+                  <p><b>609 comments</b></p>
+                </div>
+                <div class="col-md-12 mt-3 d-flex justify-content-start p-0">                  
+                  <img class="rounded-pill" src="https://yt3.ggpht.com/ytc/AOPolaTZlPHNNevycVNIWi8ZxSP5v2Dk0yS7A2pH3YmB=s48-c-k-c0x00ffffff-no-rj-mo" alt="">
+                  <div class="col-md-10">
+                  <p class="m-0"><small>Add a comment....</small></p>
+                  <div class="col-md-12 border-bottom border-dark ">
+                  </div>
+                  </div>
+                </div>
+
+
+
+
+                <div class="col-md-12 mt-3 d-flex justify-content-start p-0">                  
+                  <div class="">
+                    <img class="rounded-pill" src="imgs/prolay1.jpg" alt="" width="45px">
+                  </div>
+                  <div class="col-md-10">
+                    <p>Prolay Mukherjee <span><small>&bull;2 days ago</small></span></p>
+                  <p class="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque aliquam veritatis voluptatibus facere odio architecto aliquid laboriosam delectus sunt hic quibusdam dolores enim quasi accusamus, nemo quis nobis. Recusandae pariatur, voluptatum maiores distinctio deserunt dolor velit corrupti nam vitae quae excepturi rerum eius consequatur blanditiis possimus quibusdam adipisci ducimus saepe ipsum labore consectetur earum aliquam nobis.</p>
+
+                  <div class="d-flex w-100 justify-content-start">
+                    <button class=" d-flex align-items-end rounded-left border  border-dark border-bottom-0 border-top-0 border-left-0  px-3"> <img src="imgs/thumbs-up-64.png" alt="" width="30">13k</button>
+                    <button class=" d-flex align-items-end rounded-right border-0 px-3"> <img src="imgs/dislike-64.png" alt="" width="30"></button>
+                    <button class=" d-flex align-items-center rounded-pill ml-3 border-0 px-3"> <img src="imgs/share-50.png" alt="" width="30">Reply</button>
+                  </div>
+                  
+                  </div>
+                </div>
+                
+                
+                
+                
+                <div class="col-md-12 mt-3 d-flex justify-content-start p-0">                  
+                  <div class="">
+                    <img class="rounded-pill" src="imgs/arafat.jpg" alt="" width="45px">
+                  </div>
+                  <div class="col-md-10">
+                    <p>Mezba Uddin Arafat<span><small>&bull;2 days ago</small></span></p>
+                  <p class="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque aliquam veritatis voluptatibus facere odio architecto aliquid laboriosam delectus sunt hic quibusdam dolores enim quasi accusamus, nemo quis nobis. Recusandae pariatur, voluptatum maiores distinctio deserunt dolor velit corrupti nam vitae quae excepturi rerum eius consequatur blanditiis possimus quibusdam adipisci ducimus saepe ipsum labore consectetur earum aliquam nobis.</p>
+
+                  <div class="d-flex w-100 justify-content-start">
+                    <button class=" d-flex align-items-end rounded-left border  border-dark border-bottom-0 border-top-0 border-left-0  px-3"> <img src="imgs/thumbs-up-64.png" alt="" width="30">13k</button>
+                    <button class=" d-flex align-items-end rounded-right border-0 px-3"> <img src="imgs/dislike-64.png" alt="" width="30"></button>
+                    <button class=" d-flex align-items-center rounded-pill ml-3 border-0 px-3"> <img src="imgs/share-50.png" alt="" width="30">Reply</button>
+                  </div>
+                  
+                  </div>
+                </div>
+
+                <div class="col-md-12 mt-3 d-flex justify-content-start p-0">                  
+                  <div class="">
+                    <img class="rounded-pill" src="imgs/hridoy.jpg" alt="" width="45px">
+                  </div>
+                  <div class="col-md-10">
+                    <p>Hridoy Mukherjee<span><small>&bull;2 days ago</small></span></p>
+                  <p class="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque aliquam veritatis voluptatibus facere odio architecto aliquid laboriosam delectus sunt hic quibusdam dolores enim quasi accusamus, nemo quis nobis. Recusandae pariatur, voluptatum maiores distinctio deserunt dolor velit corrupti nam vitae quae excepturi rerum eius consequatur blanditiis possimus quibusdam adipisci ducimus saepe ipsum labore consectetur earum aliquam nobis.</p>
+
+                  <div class="d-flex w-100 justify-content-start">
+                    <button class=" d-flex align-items-end rounded-left border  border-dark border-bottom-0 border-top-0 border-left-0  px-3"> <img src="imgs/thumbs-up-64.png" alt="" width="30">13k</button>
+                    <button class=" d-flex align-items-end rounded-right border-0 px-3"> <img src="imgs/dislike-64.png" alt="" width="30"></button>
+                    <button class=" d-flex align-items-center rounded-pill ml-3 border-0 px-3"> <img src="imgs/share-50.png" alt="" width="30">Reply</button>
+                  </div>
+                  
+                  </div>
+                </div>
+                
+                <div class="col-md-12 mt-3 d-flex justify-content-start p-0">                  
+                  <div class="">
+                    <img class="rounded-pill" src="imgs/alim.jpg" alt="" width="45px">
+                  </div>
+                  <div class="col-md-10">
+                    <p>Alim Shikder<span><small>&bull;2 days ago</small></span></p>
+                  <p class="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque aliquam veritatis voluptatibus facere odio architecto aliquid laboriosam delectus sunt hic quibusdam dolores enim quasi accusamus, nemo quis nobis. Recusandae pariatur, voluptatum maiores distinctio deserunt dolor velit corrupti nam vitae quae excepturi rerum eius consequatur blanditiis possimus quibusdam adipisci ducimus saepe ipsum labore consectetur earum aliquam nobis.</p>
+
+                  <div class="d-flex w-100 justify-content-start">
+                    <button class=" d-flex align-items-end rounded-left border  border-dark border-bottom-0 border-top-0 border-left-0  px-3"> <img src="imgs/thumbs-up-64.png" alt="" width="30">13k</button>
+                    <button class=" d-flex align-items-end rounded-right border-0 px-3"> <img src="imgs/dislike-64.png" alt="" width="30"></button>
+                    <button class=" d-flex align-items-center rounded-pill ml-3 border-0 px-3"> <img src="imgs/share-50.png" alt="" width="30">Reply</button>
+                  </div>
+                  
+                  </div>
+                </div>
+              
+              
+              
+              </div>
+
+              <!-- **********************
+                >>>> sidebar list \/
+                ********************** -->
+              <div class="sidebar-list col-md-4 p-0 px-3">
+                
+                <div class="col-md-12 p-0 d-flex mb-2">
+                  <div class="col-md-5 p-0">
+                    <img class="w-100 rounded" src="imgs/bunny-thumb.jpg" alt="">
+                  </div>
+                  <div class="col-md-7 p-0 pl-1">
+                    <h6>Big Buck Bunny 60fps 4K - Short Film by Amir||...</h6>
+                    <h6 class="text-black-50 "><small>Hunny-Bunny<br>2k views &bull; 1 days ago</small></h6>
+                  </div>
+                </div>
+                
+                <div class="col-md-12 p-0 d-flex mb-2">
+                  <div class="col-md-5 p-0">
+                    <img class="w-100 rounded" src="imgs/jahangir-thumb.webp" alt="">
+                  </div>
+                  <div class="col-md-7 p-0 pl-1">
+                    <h6>ওজন কমানো সহ রোগ থেকে মুক্তি পেতে কোষ খালি করতে হবে.....</h6>
+                    <h6 class="text-black-50 "><small>Dr. Jahangir Kabir <br>20k views &bull; 3 days ago</small></h6>
+                  </div>
+                </div>
+
+                <div class="col-md-12 p-0 d-flex mb-2">
+                  <div class="col-md-5 p-0">
+                    <img class="w-100 rounded" src="imgs/sumit-saha.webp" alt="">
+                  </div>
+                  <div class="col-md-7 p-0 pl-1">
+                    <h6>Junior Web Developer - Sumit Saha.....</h6>
+                    <h6 class="text-black-50 ">
+                      <small>
+                        Learn with Sumit - LWS - Bangladesh
+                        <br>
+                        1.3M views &bull; 3 year ago
+                      </small>
+                    </h6>
+                  </div>
+                </div>
+                
+                <div class="col-md-12 p-0 d-flex mb-2">
+                  <div class="col-md-5 p-0">
+                    <img class="w-100 rounded" src="imgs/lucy-eng-thumb.webp" alt="">
+                  </div>
+                  <div class="col-md-7 p-0 pl-1">
+                    <h6>BRITISH Accent & Vocabulary Comparison!</h6>
+                    <h6 class="text-black-50 ">
+                      <small>
+                        ENGLISH WITH LUCY
+                        <br>
+                        1.3M views &bull; 3 year ago
+                      </small>
+                    </h6>
+                  </div>
+                </div>
+                
+                <div class="col-md-12 p-0 d-flex mb-2">
+                  <div class="col-md-5 p-0">
+                    <img class="w-100 rounded" src="imgs/swiss-thumb.webp" alt="">
+                  </div>
+                  <div class="col-md-7 p-0 pl-1">
+                    <h6>সুইজারল্যান্ডের সবচেয়ে ধনী গ্রাম | Luxury Swiss Village...</h6>
+                    <h6 class="text-black-50 ">
+                      <small>
+                        Shehwar & Maria
+                        <br>
+                        69k views &bull; 3 weeks ago
+                      </small>
+                    </h6>
+                  </div>
+                </div>
+                
+                <div class="col-md-12 p-0 d-flex mb-2">
+                  <div class="col-md-5 p-0">
+                    <img class="w-100 rounded" src="imgs/titanic-thumb.webp" alt="">
+                  </div>
+                  <div class="col-md-7 p-0 pl-1">
+                    <h6>টাইটানের পরিণতির কথা আগেই জানতেন টাইটানিকের পরিচালক.....</h6>
+                    <h6 class="text-black-50 ">
+                      <small>
+                        Desh TV News
+                        <br>
+                        235k views &bull; 8 hours ago
+                      </small>
+                    </h6>
+                  </div>
+                </div>
+                
+                
+                
+                
+                
+                
+                
+                <div class="col-md-12 p-0 d-flex mb-2">
+                  <div class="col-md-5 p-0">
+                    <img class="w-100 rounded" src="imgs/bunny-thumb.jpg" alt="">
+                  </div>
+                  <div class="col-md-7 p-0 pl-1">
+                    <h6>Big Buck Bunny 60fps 4K - Short Film by Amir||...</h6>
+                    <h6 class="text-black-50 "><small>Hunny-Bunny<br>2k views &bull; 1 days ago</small></h6>
+                  </div>
+                </div>
+                
+                <div class="col-md-12 p-0 d-flex mb-2">
+                  <div class="col-md-5 p-0">
+                    <img class="w-100 rounded" src="imgs/jahangir-thumb.webp" alt="">
+                  </div>
+                  <div class="col-md-7 p-0 pl-1">
+                    <h6>ওজন কমানো সহ রোগ থেকে মুক্তি পেতে কোষ খালি করতে হবে.....</h6>
+                    <h6 class="text-black-50 "><small>Dr. Jahangir Kabir <br>20k views &bull; 3 days ago</small></h6>
+                  </div>
+                </div>
+
+                <div class="col-md-12 p-0 d-flex mb-2">
+                  <div class="col-md-5 p-0">
+                    <img class="w-100 rounded" src="imgs/sumit-saha.webp" alt="">
+                  </div>
+                  <div class="col-md-7 p-0 pl-1">
+                    <h6>Junior Web Developer - Sumit Saha.....</h6>
+                    <h6 class="text-black-50 ">
+                      <small>
+                        Learn with Sumit - LWS - Bangladesh
+                        <br>
+                        1.3M views &bull; 3 year ago
+                      </small>
+                    </h6>
+                  </div>
+                </div>
+                
+                <div class="col-md-12 p-0 d-flex mb-2">
+                  <div class="col-md-5 p-0">
+                    <img class="w-100 rounded" src="imgs/lucy-eng-thumb.webp" alt="">
+                  </div>
+                  <div class="col-md-7 p-0 pl-1">
+                    <h6>BRITISH Accent & Vocabulary Comparison!</h6>
+                    <h6 class="text-black-50 ">
+                      <small>
+                        ENGLISH WITH LUCY
+                        <br>
+                        1.3M views &bull; 3 year ago
+                      </small>
+                    </h6>
+                  </div>
+                </div>
+                
+                <div class="col-md-12 p-0 d-flex mb-2">
+                  <div class="col-md-5 p-0">
+                    <img class="w-100 rounded" src="imgs/swiss-thumb.webp" alt="">
+                  </div>
+                  <div class="col-md-7 p-0 pl-1">
+                    <h6>সুইজারল্যান্ডের সবচেয়ে ধনী গ্রাম | Luxury Swiss Village...</h6>
+                    <h6 class="text-black-50 ">
+                      <small>
+                        Shehwar & Maria
+                        <br>
+                        69k views &bull; 3 weeks ago
+                      </small>
+                    </h6>
+                  </div>
+                </div>
+                
+                <div class="col-md-12 p-0 d-flex mb-2">
+                  <div class="col-md-5 p-0">
+                    <img class="w-100 rounded" src="imgs/titanic-thumb.webp" alt="">
+                  </div>
+                  <div class="col-md-7 p-0 pl-1">
+                    <h6>টাইটানের পরিণতির কথা আগেই জানতেন টাইটানিকের পরিচালক.....</h6>
+                    <h6 class="text-black-50 ">
+                      <small>
+                        Desh TV News
+                        <br>
+                        235k views &bull; 8 hours ago
+                      </small>
+                    </h6>
+                  </div>
+                </div>
+                
+                
+                
+                
+                
+                
+                
+                <div class="col-md-12 p-0 d-flex mb-2">
+                  <div class="col-md-5 p-0">
+                    <img class="w-100 rounded" src="imgs/bunny-thumb.jpg" alt="">
+                  </div>
+                  <div class="col-md-7 p-0 pl-1">
+                    <h6>Big Buck Bunny 60fps 4K - Short Film by Amir||...</h6>
+                    <h6 class="text-black-50 "><small>Hunny-Bunny<br>2k views &bull; 1 days ago</small></h6>
+                  </div>
+                </div>
+                
+                <div class="col-md-12 p-0 d-flex mb-2">
+                  <div class="col-md-5 p-0">
+                    <img class="w-100 rounded" src="imgs/jahangir-thumb.webp" alt="">
+                  </div>
+                  <div class="col-md-7 p-0 pl-1">
+                    <h6>ওজন কমানো সহ রোগ থেকে মুক্তি পেতে কোষ খালি করতে হবে.....</h6>
+                    <h6 class="text-black-50 "><small>Dr. Jahangir Kabir <br>20k views &bull; 3 days ago</small></h6>
+                  </div>
+                </div>
+
+                <div class="col-md-12 p-0 d-flex mb-2">
+                  <div class="col-md-5 p-0">
+                    <img class="w-100 rounded" src="imgs/sumit-saha.webp" alt="">
+                  </div>
+                  <div class="col-md-7 p-0 pl-1">
+                    <h6>Junior Web Developer - Sumit Saha.....</h6>
+                    <h6 class="text-black-50 ">
+                      <small>
+                        Learn with Sumit - LWS - Bangladesh
+                        <br>
+                        1.3M views &bull; 3 year ago
+                      </small>
+                    </h6>
+                  </div>
+                </div>
+                
+                <div class="col-md-12 p-0 d-flex mb-2">
+                  <div class="col-md-5 p-0">
+                    <img class="w-100 rounded" src="imgs/lucy-eng-thumb.webp" alt="">
+                  </div>
+                  <div class="col-md-7 p-0 pl-1">
+                    <h6>BRITISH Accent & Vocabulary Comparison!</h6>
+                    <h6 class="text-black-50 ">
+                      <small>
+                        ENGLISH WITH LUCY
+                        <br>
+                        1.3M views &bull; 3 year ago
+                      </small>
+                    </h6>
+                  </div>
+                </div>
+                
+                <div class="col-md-12 p-0 d-flex mb-2">
+                  <div class="col-md-5 p-0">
+                    <img class="w-100 rounded" src="imgs/swiss-thumb.webp" alt="">
+                  </div>
+                  <div class="col-md-7 p-0 pl-1">
+                    <h6>সুইজারল্যান্ডের সবচেয়ে ধনী গ্রাম | Luxury Swiss Village...</h6>
+                    <h6 class="text-black-50 ">
+                      <small>
+                        Shehwar & Maria
+                        <br>
+                        69k views &bull; 3 weeks ago
+                      </small>
+                    </h6>
+                  </div>
+                </div>
+                
+                <div class="col-md-12 p-0 d-flex mb-2">
+                  <div class="col-md-5 p-0">
+                    <img class="w-100 rounded" src="imgs/titanic-thumb.webp" alt="">
+                  </div>
+                  <div class="col-md-7 p-0 pl-1">
+                    <h6>টাইটানের পরিণতির কথা আগেই জানতেন টাইটানিকের পরিচালক.....</h6>
+                    <h6 class="text-black-50 ">
+                      <small>
+                        Desh TV News
+                        <br>
+                        235k views &bull; 8 hours ago
+                      </small>
+                    </h6>
+                  </div>
+                </div>
+                
+
+                
+              </div>
+            </div>
+          </div>
+      </div>  
+    </main>
+    
+    
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
